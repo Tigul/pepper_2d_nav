@@ -12,7 +12,7 @@ TrajectoryPlannerROS:
   min_rot_vel: 0.06 # for DWA
 
   min_in_place_vel_theta: 0.2
-  max_in_place_vel_theta: 0.4
+  max_in_place_vel_theta: 0.8
   max_vel_x: 0.3
   min_vel_x: 0.05
   max_vel_y: 0.3
@@ -24,7 +24,7 @@ TrajectoryPlannerROS:
 
 
   xy_goal_tolerance: 0.25
-  yaw_goal_tolerance: 0.2 # 0.77 ~ 45°
+  yaw_goal_tolerance: 0.05 # 0.77 ~ 45°
 #yaw_goal_tolerance: 0.06 # ~3deg
 # if the robot ever reaches the goal xy location it will simply rotate in place, even if it ends up outside the goal tolerance while it is doing so. (false)
   latch_xy_goal_tolerance: true
